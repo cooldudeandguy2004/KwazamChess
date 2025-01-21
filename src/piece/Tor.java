@@ -1,4 +1,6 @@
-package main;
+package piece;
+
+import main.GamePanel;
 
 public class Tor extends Piece {
 
