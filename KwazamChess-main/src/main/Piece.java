@@ -1,15 +1,16 @@
 package main;
 
+import java.awt.Image;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
+//import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
 public class Piece {
 
-    public BufferedImage image;
+    //public BufferedImage image;
+    public Image image;
     public int x, y;
     public int col, row, preCol, preRow;
     public int color;
@@ -24,7 +25,19 @@ public class Piece {
         preRow = row;
     }
 
-    public BufferedImage getImage(String imagePath) {
+    public Image getImage(String imagePath) {
+        Image img = null;
+        try {
+            img = ImageIO.read(new File(imagePath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return img;
+    }
+    
+
+
+    /*public BufferedImage getImage(String imagePath) {
         BufferedImage image = null;
 
         try {
@@ -34,7 +47,7 @@ public class Piece {
         }
 
         return image;
-    }
+    }*/
 
     public int getX(int col) {
         return col * Board.SQUARE_SIZE;

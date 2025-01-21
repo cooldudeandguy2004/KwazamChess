@@ -6,9 +6,9 @@ public class Ram extends Piece {
         super(color, col, row);
 
         if (color == GamePanel.BLUE) {
-            image = getImage("C/Users/ammar/Desktop/Kwazam/res/piece/BRAM.png");
+            image = getImage("Kwazam\\KwazamChess-main\\res\\Piece\\BRAM.png");
         } else {
-            image = getImage("C/Users/ammar/Desktop/Kwazam/res/piece/rRAM.png");
+            image = getImage("Kwazam\\KwazamChess-main\\res\\Piece\\RRAM.png");
         }
     }
 }

@@ -8,13 +8,6 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
-import piece.Biz;
-import piece.Piece;
-import piece.Ram;
-import piece.Sau;
-import piece.Tor;
-import piece.Xor;
-
 public class GamePanel extends JPanel implements Runnable {
 
     public static final int WIDTH = 800;
